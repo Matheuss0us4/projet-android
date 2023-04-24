@@ -1,0 +1,242 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+@font-face {
+    font-family: idroid;
+    src: url(fonts/idroid.otf) format(opentype);
+}
+
+
+* {
+    margin: 0;
+    scroll-margin-bottom: var(--cor03);
+
+} 
+
+
+:root {
+    --cor0: #14421F;
+    --cor01: #34613F;
+    --cor02: #4D8F5C;
+    --cor03: #21DB4C;
+    --cor04: #abf0bb;
+    --font0: arial, helvetica, sans-serif;
+    --Bebas: Bebas Neue, cursive;
+    --Idroid: idroid;
+}
+
+.cabecalho{
+    color: white;
+    background-image: linear-gradient(to bottom, #21DB4C, #164922);
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.507);
+    font-family: var(--Bebas);
+    padding: 12px;
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.418);    
+}
+
+.navegacao {
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.navegacao > a {
+    margin: 8px;
+    padding: 4px;
+    color: var(--cor04);
+    text-decoration: none;
+    font-size: 18px;
+    
+    
+}
+
+.navegacao > a:hover {
+    background-color: #abf0bb81;
+    color: var(--cor0);
+    border-radius: 4px;
+    text-shadow: none;
+    transition: 0.5s;
+}
+
+
+
+.tituloprin {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 19px;
+    
+
+}
+
+header h1 {
+    font-weight: normal;
+}
+
+
+
+body {
+    font-family: var(--font0);
+    background-color: #abf0bb;
+     
+}
+
+.externo::after {
+    content: '🔗';
+}
+
+
+
+main {
+    min-width: 280px;/* essas duas propriedades serven para deixar o conteudo com seu tamanho regulado em varias telas. */
+    max-width: 800px;
+    margin: auto;/* margin auto vai servir para deixar o conteudo principal alinhado no  centro do navegador nao importando o tamanho da tela. */
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    margin-bottom: 25px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+    
+}
+
+.title {
+    color: #14421F;
+    font-family: var(--Idroid);
+    text-indent: 15px;
+    margin: 12px;
+    font-weight: normal;
+    font-size: 25px; 
+}
+
+.subtttlie {
+    
+    font-weight: 100;
+    color: var(--cor0);
+    margin: 12px;
+    background-image: linear-gradient(to right, #21db4c91, rgba(0, 0, 0, 0)
+    );
+    font-family: var(--Idroid);
+    text-indent: 7px;
+    
+    
+}
+ 
+.paragrafos {
+    line-height: 1.5em;
+    text-indent: 16px;
+    margin: 12px 0px;
+    text-align: justify;/* serve para deixar as culunas dos textos alinhadas. */ 
+}
+
+main p {/* o sinal de maior que (>), nao foi colocado porque alem de <p> ainda tem artivle ou uma div  siguinifica que o <p> pode estar dentro do main em qualquer nivel p dentro de article e ect.*/
+    
+    
+}
+
+main strong {
+   color: var(--cor03);
+   padding: 4px;
+}
+
+main a {
+    background-color: var(--cor04);
+    color: var(--cor0);
+    text-decoration: none;
+
+}
+
+main a:hover {
+    color: #34613F;
+    text-decoration: underline;
+}
+
+main > article > .pequeno {
+    max-width: 350px;/* essa medida e dada em relacao ao tamanho da imagem max-largura sera 350px  e mantera o tamanho maximo.*/
+    display: block;/* display block serve nesse caso para tornar a imagem um bloco e assim podemos uasar o (margin auto) para centralizar a imagem, porque sem o display block nao podemos alinhar a imagem so usando o margin auto.*/
+    margin: auto;
+    
+   
+}
+
+footer {
+    margin: 12px;
+    background-color: white;
+    margin: 12px;
+}
+
+ul {
+   columns: 2;
+   padding: 12px;
+}
+
+ul li {
+    padding: 4px;
+    list-style: none;
+}
+
+lista{
+   display: flex;
+   flex-direction: row;
+   list-style-position: inside;
+}
+
+
+
+aside {
+    margin: 12px;
+    background-color: var(--cor04);
+    padding: 12px;
+    border-radius: 7px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.397);
+
+}
+
+aside h3 {
+    background-color: var(--cor02);
+    color: white;
+    padding: 6px;
+    margin: -12px -12px 6px -12px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+
+  
+div.video {/* nao e presiso usar espaco entre uma class e uma teg, porque se tiver a configuracao dos seletores nao vai funciionar.*/
+    background-color: var(--cor01);
+    padding: 20px;
+    margin: 0px -20px 0px -20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {/* nesse caso e no sinal de (>) maiorq so e usado para identificar a teg filho dentro da div pai a class nao prresiza desse sinal*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    
+    
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor0);
+    color: white;
+    text-align: center;
+   color: #21DB4C;
+    
+}
+
+footer a {
+    color: var(--cor03);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--cor04);
+    text-decoration: underline
+}
