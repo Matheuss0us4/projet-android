@@ -90,8 +90,8 @@ body {
 
 
 main {
-    min-width: 280px;/* essas duas propriedades serven para deixar o conteudo com seu tamanho regulado em varias telas. */
-    max-width: 800px;
+    min-width: 300px;/* essas duas propriedades serven para deixar o conteudo com seu tamanho regulado em varias telas. */
+    max-width: 1000px;
     margin: auto;/* margin auto vai servir para deixar o conteudo principal alinhado no  centro do navegador nao importando o tamanho da tela. */
     background-color: white;
     padding: 20px;
