@@ -137,6 +137,10 @@ main p {/* o sinal de maior que (>), nao foi colocado porque alem de <p> ainda t
     
 }
 
+main img {
+    width: 100%;
+}
+
 main strong {
    color: var(--cor03);
    padding: 4px;
